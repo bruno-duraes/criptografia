@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,23 +9,24 @@
     <title>Criptografia e Descriptografia</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="header">
-        <div class = "top-nav">
+        <div class="top-nav">
             <ul>
                 <li><a href="#">HOME</a></li>
             </ul>
             <button id="entrecontato">Entre em contato</button>
         </div>
-        
-        <div class = "side-nav">
-            <img src = "imagens/logo2.png" class="logo">
+
+        <div class="side-nav">
+            <img src="imagens/logo2.png" class="logo">
             <a href#="#">Bruno & Samuel</a>
         </div>
 
 
-        <div class = "text-box-title">
+        <div class="text-box-title">
             <h1>Criptografia & Descriptografia</h1>
         </div>
 
@@ -35,13 +37,13 @@
                 casos como o da criação de uma criptografia de uma mensagem. Nós utilizamos <br>
                 os conceitos aprendidos no curso para desenvolver essa solução.
             </p>
-            <img src = "imagens/criptografia.jpg" class="cripto">
+            <img src="imagens/criptografia.jpg" class="cripto">
         </div>
-        
+
         <div class="content">
             <div>
                 <p> A tabela de criptografia que usamos foi:</p>
-                <table class = "table">
+                <table class="table">
                     <tbody>
                         <tr>
                             <td>A</td>
@@ -108,20 +110,35 @@
                             <td>29</td>
                             <td>30</td>
                             <td>31</td>
-                        </tr>                        
+                        </tr>
                     </tbody>
                 </table>
             </div>
-            <p class="instruction">
-                Digite uma frase que gostaria de criptografar
-            </p>
-            <div class="inputBox">
-                <input id="frase" type="text" required="required">
+            <div style="display: flex;">
+                <div style="width: 50%;">
+                    <p class="instruction">
+                        Digite uma frase que gostaria de criptografar
+                    </p>
+                    <div class="inputBox">
+                        <input id="frase" type="text" required="required">
+                    </div>
+                    <button id="btn-cripto">Criptografar</button>
+
+                    <div id="mensagem" class="alerta"></div>
+                </div>
+                <div style="width: 50%;">
+
+                    <p class="instruction">
+                        Informe a sequência de números codificada separados por vírgula
+                    </p>
+                    <div class="inputBox">
+                        <input id="frase-cripto" placeholder="1,2,3,4" type="text" required="required">
+                    </div>
+                    <button id="btn-descripto">Descriptografar</button>
+                    <div id="mensagem-descripto" class="alerta"></div>
+                </div>
+
             </div>
-            <button id="btn-cripto">Criptografar</button>
-
-            <div id="mensagem" class="alerta"></div>
-
             <p class="resultado">
                 Resultado
             </p>
@@ -137,11 +154,11 @@
 
         </div>
 
-        <footer class = "foo">
+        <footer class="foo">
             <hr>
         </footer>
 
     </div>
 </body>
-</html>
 
+</html>
